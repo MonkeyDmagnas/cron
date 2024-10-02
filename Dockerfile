@@ -2,9 +2,9 @@ FROM nginx:latest
 
 WORKDIR /app
 
-COPY /src/index.html /usr/share/nginx/html/
-COPY /src/styles.css /usr/share/nginx/html/
-COPY /src/script.js /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html/
+COPY styles.css /usr/share/nginx/html/
+COPY script.js /usr/share/nginx/html
 
 EXPOSE 80
 
